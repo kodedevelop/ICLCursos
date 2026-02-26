@@ -1,0 +1,87 @@
+section#sinonimosAprovacao{
+    padding: 80px;
+    color: var(--b1-color);
+    background: var(--gradient-escuro);
+}
+
+/* Citação + Imagem */
+div#centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 60px;
+}
+
+div#sinonimosAprovacao-texto{
+    max-width: 600px;
+}
+
+div#sinonimosAprovacao-texto h1{
+    font-family: var(--font-geometric415);
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+div#sinonimosAprovacao-texto p{
+    font-family: var(--font-poppins);
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: var(--b2-color);
+    margin-bottom: 15px;
+}
+
+div#sinonimosAprovacao-texto figcaption{
+    font-family: var(--font-poppins);
+    font-weight: 500;
+}
+
+div#centro > img{
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+div#centro > img:hover{
+    box-shadow: -6px 6px 8px 0px rgba(179, 178, 178, 0.5);
+}
+
+/* Cards */
+div#sinonimosAprovacao-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+dl.sinonimosAprovacao-card{
+    width: 340px;
+    border-radius: 10px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--b1-color);
+    box-shadow: -6px 6px 8px 0px rgba(0,0,0,0.5);
+    transition: .3s ease;
+}
+
+dl.sinonimosAprovacao-card:hover{
+    transform: translateY(10px);
+    box-shadow: -6px 6px 8px 0px rgba(140, 10, 10, 0.5);
+}
+
+dl.sinonimosAprovacao-card dt{
+    font-family: var(--font-geometric415);
+    font-size: 40px;
+
+    /* Colocando degradê no texto */
+    background-image: var(--gradient-diamond);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black; /* Fallback para navegadores antigos */
+}
+
+dl.sinonimosAprovacao-card dd{
+    font-family: var(--font-poppins);
+    font-size: 20px;
+    color: var(--p1-color);
+}

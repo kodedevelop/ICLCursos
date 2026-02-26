@@ -27,6 +27,12 @@
   font-style: normal;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Variáveis Globais */
 :root{
     --v1-color: #EC2626;
@@ -37,9 +43,10 @@
     --p1-color: #000000;
     --p2-color: #1E1E1E;
     --p3-color: #3D3D3D;
-    --body-color: #FFF7F6;
+    --b1-color: #fff;
+    --b2-color: #F9EFEF;
     --font-inter: 'Inter', sans-serif;  
-    --font-g405: 'Geometric415', sans-serif;
+    --font-geometric415: 'Geometric415', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
     --border-radiusL: 8px;
     --border-radiusM: 10px;
@@ -48,5 +55,5 @@
 }
 
 body{
-  background-color: var(--body-color);
+  background-color: var(--b2-color);
 }
