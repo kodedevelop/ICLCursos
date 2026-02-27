@@ -85,3 +85,168 @@ dl.sinonimosAprovacao-card dd{
     font-size: 20px;
     color: var(--p1-color);
 }
+
+
+
+/* ===== MEDIA QUERY ===== */
+/* Telas com 850px - 1100px */
+@media screen and (min-width: 850px) and (max-width: 1100px){
+    section#sinonimosAprovacao{
+        padding: 50px;
+    }
+
+    /* Citação + Imagem */
+    div#centro{
+        gap: 40px;
+    }
+
+    div#sinonimosAprovacao-texto h1{
+        font-size: 45px;
+    }
+
+    div#centro > img{
+        width: 300px;
+    }
+
+    /* Cards */
+    dl.sinonimosAprovacao-card dt{
+        font-size: 35px;
+    }
+
+    dl.sinonimosAprovacao-card dd{
+        font-size: 15px;
+    }
+}
+
+/* Telas com 660px - 849px */
+@media screen and (min-width: 660px) and (max-width: 849px){
+    section#sinonimosAprovacao{
+        padding: 50px;
+    }
+
+    /* Citação + Imagem */
+    div#centro{
+        gap: 40px;
+    }
+
+    div#sinonimosAprovacao-texto h1{
+        font-size: 38px;
+    }
+
+    div#sinonimosAprovacao-texto p{
+        font-size: 15px;
+    }
+
+    figcaption{
+        font-size: 12px;
+    }
+
+    div#centro > img{
+        width: 250px;
+    }
+
+    /* Cards */
+    div#sinonimosAprovacao-cards{
+        gap: 20px;
+    }
+
+    dl.sinonimosAprovacao-card dt{
+        font-size: 30px;
+    }
+
+    dl.sinonimosAprovacao-card dd{
+        font-size: 12px;
+    }
+}
+
+/* Telas com 520px - 669px */
+@media screen and (min-width: 520px) and (max-width: 669px){
+    section#sinonimosAprovacao{
+        padding: 50px;
+    }
+
+    /* Citação + Imagem */
+    div#centro{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    div#sinonimosAprovacao-texto h1{
+        font-size: 38px;
+    }
+
+    div#sinonimosAprovacao-texto p{
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    figcaption{
+        font-size: 12px;
+    }
+
+    div#centro > img{
+        width: 220px;
+    }
+
+    /* Cards */
+    div#sinonimosAprovacao-cards{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    dl.sinonimosAprovacao-card{
+        width: 200px;
+    }
+
+    dl.sinonimosAprovacao-card dt{
+        font-size: 30px;
+    }
+
+    dl.sinonimosAprovacao-card dd{
+        font-size: 12px;
+    }
+}
+
+/* Telas com ...px - 519px */
+@media screen and (max-width: 519px){
+    section#sinonimosAprovacao{
+        padding: 25px;
+    }
+
+    /* Citação + Imagem */
+    div#centro{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    div#sinonimosAprovacao-texto h1{
+        font-size: 30px;
+    }
+
+    div#sinonimosAprovacao-texto p{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    figcaption{
+        font-size: 12px;
+    }
+
+    div#centro > img{
+        width: 220px;
+    }
+
+    /* Cards */
+    div#sinonimosAprovacao-cards{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    dl.sinonimosAprovacao-card dt{
+        font-size: 30px;
+    }
+
+    dl.sinonimosAprovacao-card dd{
+        font-size: 12px;
+    }
+}
