@@ -1,0 +1,159 @@
+.section-contato {
+  background-color: black;
+  color: var(--b1-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.section-contato h2 {
+  display: flex;
+  font-family: var(--font-geometric415);
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.section-contato h2::before,
+.section-contato h2::after {
+  content: "";
+  width: 100px;
+  height: 5px;
+  background-color: var(--b2-color);
+  border-radius: 4px;
+}
+
+.container-contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 230px;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-family: var(--font-geometric415);
+  font-size: 18px;
+  font-weight: 900;
+  padding: 20px 0px 5px 0px;
+}
+
+.form-group input {
+  width: 470px;
+  height: 50px;
+}
+
+.form-group textarea {
+  width: 470px;
+  height: 230px;
+}
+
+.form-group input, textarea {
+  border: 1px solid var(--v3-color);
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-contato button {
+  background-color: var(--v2-color);
+  color: var(--b1-color);
+  font-family: var(--font-geometric415);
+  font-weight: 900;
+  font-size: 20px;
+  width: 470px;
+  height: 64px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: -4px 4px 10px 0px var(--v5-color);
+  margin-top: 20px;
+}
+
+.info-endereco button {
+  width: 176px;
+  height: 40px;
+  background-color: transparent;
+  color: var(--b1-color);
+  font-family: var(--font-geometric415);
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid var(--b1-color);
+  margin-top: 15px;
+}
+
+.info-endereco button img {
+  width: 10px;
+  margin-left: 8px;
+}
+
+.infos-contato-all {
+  border-bottom: 1px solid var(--p3-color);
+  padding: 20px 0px;
+}
+
+.infos-contato-all h3 {
+  font-family: var(--font-geometric415);
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.info-endereco h3::before {
+  content: url(../img/geo-alt.svg);
+  margin-right: 7px;
+  height: 25px;
+}
+
+.info-email h3::before {
+  content: url(../img/envelope-at.svg);
+  margin-right: 7px;
+  height: 25px;
+}
+
+.info-contato h3::before {
+  content: url(../img/telephone.svg);
+  margin-right: 7px;
+  height: 25px;
+}
+
+.info-horario h3::before {
+  content: url(../img/clock.svg);
+  margin-right: 7px;
+  height: 25px;
+}
+
+.infos-contato-all p {
+  font-family: var(--font-geometric415);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.info-redes-sociais {
+  padding-top: 20px;
+}
+
+.info-redes-sociais img {
+  height: 25px;
+  padding: 0px 38px 0px 0px;
+}
+
+.info-redes-sociais img:last-child {
+  height: 22px;
+}
