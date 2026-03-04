@@ -1,0 +1,176 @@
+@import url(base.css);
+
+/* ── Section ── */
+.why-section {
+    position: relative;
+    width: 100%;
+    padding:
+    clamp(32px, 5vw, 56px)
+    clamp(16px, 4vw, 40px)
+    clamp(40px, 6vw, 72px);
+    overflow: hidden;
+}
+
+/* ── Título ── */
+.why-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(10px, 2vw, 20px);
+    margin-bottom: clamp(28px, 4vw, 52px);
+    font-family: var(--font-geometric415);
+}
+
+.why-heading-line {
+    flex: 0 0 clamp(32px, 5vw, 72px);
+    height: 2.5px;
+    background-color: var(--v3-color);
+    border-radius: 2px;
+}
+
+.why-heading-text {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: 900;
+    font-style: italic;
+    color: var(--text-color);
+    white-space: normal;
+    text-align: center;
+}
+
+.why-heading-text span {
+    color: var(--v3-color);
+}
+
+/* ── Grid de cards ── */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 260px));
+    gap: clamp(32px, 8vw, 160px);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 5vw, 80px);
+    justify-content: center;
+    position: relative;
+}
+
+/* ── Decorações ── */
+.why-grid::before,
+.why-grid::after {
+    content: '';
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    background-image: url('../img/deco.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    top: auto;
+    bottom: 52px;
+}
+
+.why-grid::before {
+    left: 12px;
+    transform: rotate(-90deg);
+}
+
+.why-grid::after {
+    right: 12px;
+    transform: rotate(180deg);
+}
+
+/* ── Card individual ── */
+.why-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    animation: whyFadeUp 0.6s ease both;
+}
+.why-card:nth-child(1) { animation-delay: 0.0s; }
+.why-card:nth-child(2) { animation-delay: 0.12s; }
+.why-card:nth-child(3) { animation-delay: 0.24s; }
+
+.why-card-img-wrap {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.why-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+    -webkit-user-drag: none;
+    -user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.why-card:hover .why-card-img-wrap img {
+    transform: scale(1.04);
+}
+
+.why-card-label {
+    font-size: clamp(0.8rem, 1.4vw, 1.05rem);
+    font-style: italic;
+    color: var(--text-color);
+    text-align: center;
+    line-height: 1.45;
+    font-weight: 900;
+    font-family: var(--font-geometric415);
+}
+
+/* ── Responsividade ── */
+
+@media (max-width: 1220px) {
+    .why-grid::before,
+    .why-grid::after {
+    display: none !important;
+    content: none;
+    }
+}
+
+/* Tablet (≤ 900px) */
+@media (max-width: 900px) {
+    .why-grid {
+    grid-template-columns: repeat(3, minmax(0, 180px));
+    gap: clamp(20px, 5vw, 60px);
+    padding: 0 clamp(12px, 3vw, 32px);
+    }
+    .why-card-label {
+    font-size: clamp(0.75rem, 1.8vw, 0.92rem);
+    }
+}
+
+/* Tablet pequeno (≤ 640px) */
+@media (max-width: 640px) {
+    .why-grid {
+    grid-template-columns: repeat(3, minmax(0, 130px));
+    gap: clamp(12px, 4vw, 28px);
+    padding: 0 8px;
+    }
+    .why-card { gap: 12px; }
+    .why-card-label {
+    font-size: clamp(0.68rem, 2vw, 0.82rem);
+    }
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+    .why-grid {
+    grid-template-columns: minmax(0, 220px);
+    gap: 28px;
+    padding: 0;
+    }
+    .why-card-label { font-size: 0.88rem; }
+}
+
+/* Muito pequeno (≤ 360px) */
+@media (max-width: 360px) {
+    .why-grid { grid-template-columns: minmax(0, 180px); }
+    .why-card-label { font-size: 0.8rem; }
+}

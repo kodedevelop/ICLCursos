@@ -1,0 +1,87 @@
+@import url(base.css);
+
+/* ── Footer ── */
+.icl-footer {
+    width: 100%;
+    background-color: var(--p1-color);
+    font-family: 'Lato', sans-serif;
+    padding: 32px clamp(24px, 5vw, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: 110px;
+}
+
+/* ── Coluna esquerda ── */
+.icl-footer-copy {
+    font-size: clamp(0.78rem, 1.2vw, 0.95rem);
+    color: var(--b1-color);
+    font-weight: 500;
+    font-family: var(--font-geometric415);
+    white-space: nowrap;
+}
+
+/* ── Logo central ── */
+.icl-footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.icl-footer-logo img {
+    height: clamp(56px, 7vw, 80px);
+    width: auto;
+    display: block;
+    -webkit-user-drag: none;
+    -user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* ── Coluna direita ── */
+.icl-footer-dev {
+    font-size: clamp(0.78rem, 1.2vw, 0.95rem);
+    color: var(--b1-color);
+    font-weight: 500;
+    font-family: var(--font-geometric415);
+    white-space: nowrap;
+    text-align: right;
+}
+
+.icl-footer-dev a {
+    color: var(--b1-color);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.icl-footer-dev a:hover {
+    color: #8A38F5;
+}
+
+/* ── Responsividade ── */
+
+/* Tablet (≤ 768px): logo primeiro, depois os dois textos abaixo */
+@media (max-width: 768px) {
+    .icl-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px 24px;
+    gap: 12px;
+    min-height: auto;
+    }
+
+    .icl-footer-logo  { order: 1; }
+    .icl-footer-copy  { order: 2; white-space: normal; text-align: center; }
+    .icl-footer-dev   { order: 3; white-space: normal; text-align: center; }
+}
+
+/* Mobile pequeno (≤ 400px) */
+@media (max-width: 400px) {
+    .icl-footer { padding: 24px 16px; gap: 10px; }
+    .icl-footer-copy,
+    .icl-footer-dev { font-size: 0.75rem; }
+}
