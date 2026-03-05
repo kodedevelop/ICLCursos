@@ -1,3 +1,4 @@
+/* Section - Depoimentos */ 
 section#depoimentos{
     padding: 0 50px;
     display: flex;
@@ -7,7 +8,7 @@ section#depoimentos{
 }
 
 
-/* Título + Subtítulo */
+/* Depoimentos - Título + Subtítulo */
 div#depoimentos-tituloSubtiulo{
     max-width: 815px;
     text-align: center;
@@ -37,7 +38,8 @@ div#depoimentos-tituloSubtiulo > h1::after{
 div#depoimentos-tituloSubtiulo > p{
     font-size: 35px;
     font-family: var(--font-geometric415);
-    color: var(--p3-color);;
+    color: var(--p3-color);
+    font-weight: bold;
 }
 
 div#depoimentos-tituloSubtiulo span.depoimentosSpan{
@@ -45,7 +47,7 @@ div#depoimentos-tituloSubtiulo span.depoimentosSpan{
 }
 
 
-/* Depoimentos */
+/* Depoimentos - Cards */
 div#depomentosCardContainer{
     display: flex;
     gap: 60px;
@@ -83,5 +85,87 @@ div.depoimentoCard h3{
 
 div.depoimentoCard p{
     font-size: 18px;
-    font-weight: lighter;   
+    font-weight: lighter;  
+}
+
+
+
+/* ===== MEDIA QUERY ===== */
+/* Telas com ...px - 1250px */
+@media screen and (max-width: 1250px){
+    /* Depoimentos - Cards */
+    div#depomentosCardContainer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Telas com 500px - 665px */
+@media screen and (min-width: 500px) and (max-width: 665px){
+    /* Section - Depoimentos */ 
+    section#depoimentos{
+        padding: 0 35px;
+        gap: 70px;
+    }
+
+
+    /* Depoimentos - Título + Subtítulo */
+    div#depoimentos-tituloSubtiulo > h1 {
+        font-size: 25px;
+    }
+
+    div#depoimentos-tituloSubtiulo > h1::after{
+        width: 110px;
+    }
+
+    div#depoimentos-tituloSubtiulo > p{
+        font-size: 28px;
+    }
+
+
+    /* Depoimentos - Cards */
+    div.depoimentoCard{
+        width: 80%;
+        height: fit-content;
+        padding: 60px 20px 40px;
+    }
+}
+
+/* Telas com ...px - 650px */
+@media screen and (max-width: 499px){
+    /* Section - Depoimentos */ 
+    section#depoimentos{
+        padding: 0 25px;
+        gap: 70px;
+    }
+
+
+    /* Depoimentos - Título + Subtítulo */
+    div#depoimentos-tituloSubtiulo > h1 {
+        font-size: 20px;
+    }
+
+    div#depoimentos-tituloSubtiulo > h1::after{
+        width: 90px;
+    }
+
+    div#depoimentos-tituloSubtiulo > p{
+        font-size: 24px;
+    }
+
+    /* Depoimentos - Cards */
+    div.depoimentoCard{
+        width: 100%;
+        height: fit-content;
+        padding: 60px 20px 40px;
+    }
+
+    div.depoimentoCard h3{
+        font-size: 12px;
+    }
+
+    div.depoimentoCard p{
+        font-size: 16px;
+        font-weight: lighter;  
+    }
 }
