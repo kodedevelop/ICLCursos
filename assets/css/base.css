@@ -27,6 +27,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Geometric415";
+  src: url("../fonts/Geometric\ 415\ W03\ Lite.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
 *{
   margin: 0;
   padding: 0;
