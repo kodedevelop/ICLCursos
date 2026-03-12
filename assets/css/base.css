@@ -60,6 +60,7 @@
   --border-radiusM: 10px;
   --gradient-diamond: radial-gradient(circle at center, #8F1717 0%, #4D0D0D 100%);
   --gradient-escuro: linear-gradient(45deg, #1E1E1E, #5E5E5E);
+  --gradient-vermelho: linear-gradient(90deg, #8F1717, #641010);
 }
 
 body{

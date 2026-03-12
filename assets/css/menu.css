@@ -1,0 +1,89 @@
+.menu-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin: 20px 50px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.616);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.35);
+  box-shadow:
+    0 0 12px rgba(255,255,255,0.25),
+    0 8px 40px rgba(0,0,0,0.6),
+    inset 0 0 8px rgba(255,255,255,0.1);
+}
+
+.menu-container{
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 64px;
+}
+
+.menu-logo{
+  margin-right: auto;
+}
+
+#menu-imagem-logo{
+  width: 80px;
+  height: 80px;
+}
+
+.menu-list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.menu-list a{
+  display: inline-block;
+  padding: 12px 0;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  font-weight: 500;
+}
+
+.menu-list a::after{
+  content:"";
+  display:block;
+  height:2px;
+  width:0;
+  background:white;
+  margin-top:4px;
+  transition:.3s;
+  position:absolute;
+}
+
+.menu-list a:hover::after{
+  width:100%;
+}
+
+/* BOTÃO CONTATO */
+
+.menu-btn-contato{
+  background: #33abb4;
+  padding: 18px 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: var(--font-geometric415);
+}
+
+.menu-btn-contato::after{
+  display:none;
+}
+
+.menu-button{
+  display:none;
+}

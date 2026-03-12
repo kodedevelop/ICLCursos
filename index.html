@@ -10,12 +10,63 @@
     <link rel="stylesheet" href="assets/css/sinonimosAprovacao.css">
     <link rel="stylesheet" href="assets/css/depoimentos.css">
     <link rel="stylesheet" href="assets/css/carrosselAlunos.css">
+    <link rel="stylesheet" href="assets/css/sobre.css">
+    <link rel="stylesheet" href="assets/css/videomain.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
 
     <!-- JS -->
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/menuMobile.js"></script>
 </head>
 <body>
-    <header></header>
+    <section class="hero">
+
+  <div class="hero-overlay">
+
+    <div class="hero-small-title">
+      <span></span>
+      <p>ICL Cursos e Preparatórios</p>
+      <img src="assets/img/logo-icon.png" alt="">
+    </div>
+
+    <h1 class="hero-title">
+      MELHOR LUGAR PARA<br>
+      SUA <span>APROVAÇÃO</span>
+    </h1>
+
+    <p class="hero-text">
+      Estude com materiais atualizados e professores especialistas para
+      conquistar sua aprovação no concurso
+    </p>
+
+    <a href="#contato" class="hero-button">
+      QUERO ME PREPARAR
+    </a>
+
+  </div>
+
+</section>
+
+  <!-- Menu -->
+  <header class="menu-navbar">
+    <div class="menu-container">
+      <div class="menu-logo">
+        <a href="./">
+          <img id="menu-imagem-logo" src="assets/img/ICL-Logo.png" alt="Logo Sale Motors" />
+        </a>
+      </div>
+      <nav>
+        <button data-menu="button" class="menu-button" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul data-menu="list" id="menu" class="menu-list">
+          <li><a href="">Sobre Nós</a></li>
+          <li><a href="">Cursos</a></li>
+          <li><a href="">Diferenciais</a></li>
+          <li><a href="">Depoimentos</a></li>
+          <li><a href="#contato" class="menu-btn-contato">CONTATO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
     <main>
         <!-- Section - Sinônimos de Aprovação -->
@@ -61,6 +112,42 @@
                 </dl>
             </div>
         </section>
+
+        <section class="sobre">
+  <div class="container">
+
+    <div class="sobre-grid">
+
+      <div class="sobre-img">
+        <img src="assets/img/image 25.png" alt="Prédio ICL">
+      </div>
+
+      <div class="sobre-content">
+
+        <div class="sobre-top">
+          <span class="linha"></span>
+          <p class="tag">SOBRE NÓS</p>
+        </div>
+
+        <h2>
+          Nosso <span class="destaque">FOCO</span> está na <br>
+          aprovação do <span class="destaque">ALUNO</span>!
+        </h2>
+
+        <p class="descricao">
+          A ICL tem 14 anos de atuação no mercado de preparatórios para concursos,
+          com mais de 12 mil aprovações em concursos das esferas municipal,
+          estadual e federal. Pelos resultados alcançados ao longo desses anos,
+          ela é reconhecida como a melhor escola de Uberlândia e do Triângulo
+          Mineiro. Temos alunos espalhados em todos os estados.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
         <!-- Section - Depoimentos -->
         <section id="depoimentos">

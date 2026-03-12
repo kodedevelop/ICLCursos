@@ -1,0 +1,82 @@
+.sobre {
+  background: #f3efef;
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.sobre-img img {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+
+.sobre-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.linha {
+  width: 60px;
+  height: 4px;
+  background: var(--v2-color);
+  display: block;
+  border-radius: 8px;
+}
+
+.tag {
+  font-size: 14px;
+  font-weight: 700;
+  color: #8d1c1c;
+  font-family: var(--font-geometric415);
+  font-style: normal;
+}
+
+.sobre-content h2 {
+  font-size: 38px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #222;
+  font-family: var(--font-geometric415);
+}
+
+.destaque {
+  color: var(--v2-color);
+  font-family: var(--font-geometric415);
+}
+
+.descricao {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 500px;
+}
+
+@media (max-width: 900px) {
+
+  .sobre-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-content h2 {
+    font-size: 28px;
+  }
+
+  .descricao {
+    max-width: 100%;
+  }
+
+}
