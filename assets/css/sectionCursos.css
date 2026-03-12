@@ -205,6 +205,13 @@
   border: none;
   border-radius: 5px;
   font-size: 15px;
+  text-align: center;
+}
+
+.card-curso button img {
+  width: 12px;
+  height: 11px;
+  margin-left: 5px;
 }
 
 .carrossel-container {
@@ -236,4 +243,10 @@
 .btn-prev img {
   width: 50px;
   height: auto;
+}
+
+.seta-direita-button {
+  width: 12px;
+  height: 11px;
+  margin-left: 5px;
 }
