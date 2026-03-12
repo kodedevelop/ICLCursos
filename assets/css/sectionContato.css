@@ -7,13 +7,13 @@
 
 .section-contato h2 {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
   font-family: var(--font-geometric415);
   font-size: 40px;
   font-weight: 700;
   font-style: normal;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
   text-align: center;
 }
 
@@ -47,7 +47,7 @@
   font-family: var(--font-geometric415);
   font-size: 18px;
   font-weight: 900;
-  padding: 20px 0px 5px 0px;
+  padding: 20px 0 5px;
 }
 
 .form-group input {
@@ -58,41 +58,39 @@
 .form-group textarea {
   width: 470px;
   height: 230px;
+  resize: none;
 }
 
-.form-group input, textarea {
+.form-group input,
+.form-group textarea {
   border: 2px solid var(--v3-color);
   border-radius: 5px;
   font-size: 16px;
   padding: 5px;
-}
-
-textarea {
-  resize: none;
+  outline: none;
 }
 
 .form-contato button {
+  width: 470px;
+  height: 64px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
   background-color: var(--v2-color);
   color: var(--b1-color);
   font-family: var(--font-geometric415);
   font-weight: 900;
   font-size: 20px;
-  width: 470px;
-  height: 64px;
-  border: none;
-  border-radius: 8px;
-  box-shadow: -4px 4px 10px 0px var(--v5-color);
-  margin-top: 20px;
-
+  box-shadow: -4px 4px 10px 0 var(--v5-color);
   cursor: pointer;
-  transition: 
+  transition:
     background-color 0.3s ease,
     transform 0.2s ease,
     box-shadow 0.2s ease;
 }
 
 .form-contato button:hover {
-  background-color: var(--v4-color);
+  background-color: var(--v1-color);
   transform: translateY(-3px);
   box-shadow: -6px 6px 14px var(--v5-color);
 }
@@ -103,20 +101,18 @@ textarea {
 }
 
 .info-endereco button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 176px;
   height: 40px;
+  margin-top: 15px;
+  border: 1px solid var(--b1-color);
+  border-radius: 10px;
   background-color: transparent;
   color: var(--b1-color);
   font-family: var(--font-geometric415);
   font-weight: 500;
-  border-radius: 10px;
-  border: 1px solid var(--b1-color);
-  margin-top: 15px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -133,43 +129,44 @@ textarea {
 }
 
 .info-endereco button:hover img {
+  content: url("../img/seta-direita-preta.svg");
   transform: translateX(4px);
 }
 
 .infos-contato-all {
   border-bottom: 1px solid var(--p3-color);
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 
 .infos-contato-all h3 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
   font-family: var(--font-geometric415);
   font-weight: 700;
   font-size: 20px;
-  display: flex;
-  padding-bottom: 10px;
-  align-items: center;
 }
 
 .info-endereco h3::before {
-  content: url(../img/geo-alt.svg);
+  content: url("../img/geo-alt.svg");
   margin-right: 7px;
   height: 25px;
 }
 
 .info-email h3::before {
-  content: url(../img/envelope-at.svg);
+  content: url("../img/envelope-at.svg");
   margin-right: 7px;
   height: 25px;
 }
 
 .info-contato h3::before {
-  content: url(../img/telephone.svg);
+  content: url("../img/telephone.svg");
   margin-right: 7px;
   height: 25px;
 }
 
 .info-horario h3::before {
-  content: url(../img/clock.svg);
+  content: url("../img/clock.svg");
   margin-right: 7px;
   height: 25px;
 }
@@ -182,16 +179,23 @@ textarea {
 
 .info-redes-sociais {
   display: flex;
-  padding-top: 20px;
   gap: 38px;
+  padding-top: 20px;
 }
 
 .info-redes-sociais img {
   height: 25px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  cursor: pointer;
 }
 
 .info-redes-sociais img:last-child {
   height: 22px;
+}
+
+.info-redes-sociais img:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
 }
 
 /* mobile pequeno */
@@ -224,13 +228,14 @@ textarea {
     width: 250px;
   }
 
-  .form-group input, textarea {
+  .form-group input,
+  .form-group textarea {
     font-size: 16px;
   }
 
   .form-contato button {
-    font-size: 18px;
     width: 250px;
+    font-size: 18px;
   }
 
   .info-endereco button {
@@ -314,7 +319,7 @@ textarea {
   .info-redes-sociais img:last-child {
     height: 19px;
   }
- }
+}
 
 /* tablet */
 @media (min-width: 481px) and (max-width: 600px) {
@@ -407,7 +412,7 @@ textarea {
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1600px)  {
+@media (min-width: 1200px) and (max-width: 1600px) {
   .container-contato {
     gap: 14%;
   }
