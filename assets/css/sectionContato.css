@@ -65,17 +65,8 @@
   border: 2px solid var(--v3-color);
   border-radius: 5px;
   font-size: 16px;
-  padding: 8px;
+  padding: 5px;
   outline: none;
-  transition: .2s ease;
-}
-
-.form-group input:hover, .form-group textarea:hover{
-  outline: 2px solid var(--v1-color);
-}
-
-.form-group input:focus, .form-group textarea:focus{
-  outline: 2px solid var(--v1-color);
 }
 
 .form-contato button {
