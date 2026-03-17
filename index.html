@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="assets/css/sobre.css">
     <link rel="stylesheet" href="assets/css/videomain.css">
     <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/caixaFlutuante.css">
+    <link rel="stylesheet" href="assets/css/diferenciais.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 
     <!-- JS -->
     <script src="assets/js/main.js" defer></script>
@@ -69,6 +72,57 @@
   </header>
 
     <main>
+
+  <section class="box-floating" aria-label="Destaque institucional">
+    <div class="badge-box">
+      <svg class="medal-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="15" r="10" stroke="currentColor" stroke-width="2.5" fill="none"/>
+        <path d="M14 24L10.5 36l9.5-5 9.5 5L26 24" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <span class="badge-text">Instituição mais procurada para cursos e preparatórios!</span>
+    </div>
+  </section>
+
+  <!-- Section - Por que estudar no ICL? -->
+  <section class="why-section" aria-labelledby="why-title">
+
+    <!-- Título -->
+    <div class="why-heading">
+      <span class="why-heading-line" aria-hidden="true"></span>
+      <h2 class="why-heading-text" id="why-title">
+        Por que estudar no <span>ICL</span>?
+      </h2>
+      <span class="why-heading-line" aria-hidden="true"></span>
+    </div>
+
+    <!-- Cards -->
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-card-img-wrap">
+          <img src="assets/img/livros.webp" alt="Pilha de livros coloridos" />
+        </div>
+        <p class="why-card-label">Cuidado e compromisso com os nossos alunos</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-card-img-wrap">
+          <img src="assets/img/livros2.webp" alt="Estantes com muitos livros" />
+        </div>
+        <p class="why-card-label">Professores com experiência em Provas de Concursos</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-card-img-wrap">
+          <img src="assets/img/professora.webp" alt="Professora em frente ao quadro" />
+        </div>
+        <p class="why-card-label">Materiais ricos em questões e direto ao ponto</p>
+      </div>
+
+    </div>
+
+  </section>
+      
         <!-- Section - Sinônimos de Aprovação -->
         <section id="sinonimosAprovacao">
             <!-- Citação + Imagem -->
@@ -203,6 +257,22 @@
         </section>
     </main>
 
-    <footer></footer>
+    <!-- Footer -->
+    <footer class="icl-footer" aria-label="Rodapé">
+
+    <!-- Esquerda -->
+    <span class="icl-footer-copy">2026 © Todos os direitos reservados</span>
+
+    <!-- Logo central -->
+    <div class="icl-footer-logo">
+      <a href="#"><img src="assets/img/logoICL_footer.png" alt="ICL Cursos e Preparatórios — A sua aprovação começa aqui!" /></a>
+    </div>
+
+    <!-- Direita -->
+    <span class="icl-footer-dev">
+      Desenvolvido pela <a href="https://www.instagram.com/kodeweb.dev/" target="_blank" rel="noopener noreferrer">KODE.dev</a>
+    </span>
+
+  </footer>
 </body>
 </html>
