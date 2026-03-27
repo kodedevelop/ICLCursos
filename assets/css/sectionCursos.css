@@ -136,16 +136,45 @@
   margin: 21px 0;
 }
 
-.curso .curso-info button {
+/* Base compartilhada dos botões */
+.button-cursos,
+.button-cursos-carrossel {
+  align-items: center;
+  justify-content: center;
+  background-color: var(--v3-color);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.button-cursos:hover,
+.button-cursos-carrossel:hover {
+  background-color: var(--v2-color);
+}
+
+.button-cursos:active,
+.button-cursos-carrossel:active {
+  opacity: 0.9;
+}
+
+/* Botão destaque */
+.button-cursos {
+  display: flex;
+  gap: 8px;
   width: 100%;
   height: 50px;
-  border: none;
   border-radius: 10px;
-  background-color: var(--v3-color);
   color: var(--b1-color);
   font-family: var(--font-geometric415);
   font-size: 20px;
   font-weight: 500;
+}
+
+.button-cursos:hover {
+  transform: translateY(-2px);
+}
+
+.button-cursos:active {
+  transform: translateY(0);
 }
 
 /* Nossos Cursos */
@@ -172,7 +201,7 @@
 }
 
 .card-curso img,
-.card-curso button {
+.button-cursos-carrossel {
   width: 210px;
 }
 
@@ -198,14 +227,23 @@
   list-style: disc outside;
 }
 
-.card-curso button {
+/* Botão do card */
+.button-cursos-carrossel {
+  display: inline-flex;
   height: 34px;
-  border: none;
+  padding: 0 12px;
   border-radius: 5px;
-  background-color: var(--v3-color);
   color: #fff;
   font-size: 15px;
   text-align: center;
+}
+
+.button-cursos-carrossel:hover {
+  transform: translateY(-1px);
+}
+
+.button-cursos-carrossel:active {
+  transform: translateY(0);
 }
 
 .card-curso .seta-direita-button {
@@ -255,7 +293,6 @@
 }
 
 /* 0 a 480px */
-
 @media (max-width: 480px) {
   .section-cursos {
     margin: 48px 0;
@@ -339,7 +376,7 @@
   }
 
   .card-curso img,
-  .card-curso button {
+  .button-cursos-carrossel {
     width: 210px;
   }
 
@@ -353,7 +390,7 @@
   }
 
   .carrossel-cursos {
-    gap: 20px;
+    gap: 0;
   }
 
   .btn-next,
@@ -367,146 +404,19 @@
   }
 }
 
-/* 481 a 600px */
 
-@media (min-width: 481px) and (max-width: 600px) {
+/* 481 a 768px */
+@media (min-width: 481px) and (max-width: 768px) {
   .section-cursos {
     margin: 48px 0;
   }
-
-  .cursos-faixa img {
-    width: 100px;
-    height: 80px;
+  
+  .curso-faixa {
+    margin: auto;
   }
 
   .cursos-faixa-textos {
-    max-width: 235px;
-  }
-
-  .cursos-faixa-textos h2 {
-    font-size: 40px;
-  }
-
-  .cursos-faixa-textos p {
-    font-size: 25px;
-  }
-
-  .cursos-destaque {
-    margin-top: 50px;
-  }
-
-  .titulo-cursos {
-    margin-bottom: 30px;
-    font-size: 24px;
-  }
-
-  .curso {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .curso-dir-mq {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .curso .curso-titulo-img h4 {
-    font-size: 22px;
-  }
-
-  .curso .curso-titulo-img img {
-    width: 340px;
-    height: 340px;
-  }
-
-  .curso .curso-info {
-    max-width: 340px;
-    font-size: 19px;
-  }
-
-  .curso .curso-info li {
-    gap: 5px;
-    padding-bottom: 15px;
-  }
-
-  .curso .curso-info .curso-obs {
-    margin: 15px 0;
-  }
-
-  .nossos-cursos {
-    margin-top: 40px;
-  }
-
-  .carrossel-container {
-    gap: 6px;
-  }
-
-  .card-curso {
-    width: 250px;
-    height: 370px;
-    padding-top: 12px;
-  }
-
-  .card-curso img,
-  .card-curso button {
-    width: 228px;
-  }
-
-  .card-curso img {
-    height: 220px;
-  }
-
-  .card-curso h4 {
-    font-size: 19px;
-  }
-
-  .card-curso button {
-    height: 36px;
-  }
-
-  .carrossel-wrapper {
-    width: 250px;
-    max-width: calc(100vw - 90px);
-  }
-
-  .carrossel-cursos {
-    gap: 24px;
-  }
-
-  .btn-next,
-  .btn-prev {
-    padding: 8px;
-  }
-
-  .btn-next img,
-  .btn-prev img {
-    width: 24px;
-  }
-}
-
-/* 601 a 768px */
-
-@media (min-width: 601px) and (max-width: 768px) {
-  .section-cursos {
-    margin: 48px 0;
-  }
-
-  .cursos-faixa-textos {
-    max-width: 250px;
-  }
-
-  .cursos-faixa img {
-    width: 110px;
-    height: 90px;
-  }
-
-  .cursos-faixa-textos h2 {
-    font-size: 42px;
-  }
-
-  .cursos-faixa-textos p {
-    font-size: 27px;
+    max-width: 280px;
   }
 
   .cursos-destaque {
@@ -562,7 +472,7 @@
   }
 
   .card-curso img,
-  .card-curso button {
+  .button-cursos-carrossel {
     width: 210px;
   }
 
@@ -589,8 +499,8 @@
   }
 }
 
-/* 769 a 900px */
 
+/* 769 a 900px */
 @media (min-width: 769px) and (max-width: 900px) {
   .section-cursos {
     margin: 48px 0;
@@ -643,7 +553,7 @@
   }
 
   .card-curso img,
-  .card-curso button {
+  .button-cursos-carrossel {
     width: 220px;
   }
 
@@ -671,8 +581,8 @@
   }
 }
 
-/* 901 a 1200px */
 
+/* 901 a 1200px */
 @media (min-width: 901px) and (max-width: 1200px) {
   .section-cursos {
     margin: 48px 0;
