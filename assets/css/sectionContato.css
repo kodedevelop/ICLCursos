@@ -108,7 +108,7 @@
   box-shadow: -2px 2px 6px var(--v5-color);
 }
 
-.info-endereco button {
+.info-endereco .btn-mapa {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,24 +120,25 @@
   background-color: transparent;
   color: var(--b1-color);
   font-family: var(--font-geometric415);
+  font-size: 14px;
   font-weight: 500;
+  text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.info-endereco button img {
+.info-endereco .btn-mapa svg {
   width: 10px;
   margin-left: 8px;
   transition: transform 0.25s ease;
 }
 
-.info-endereco button:hover {
+.info-endereco .btn-mapa:hover {
   background-color: var(--b1-color);
   color: black;
 }
 
-.info-endereco button:hover img {
-  content: url("../img/seta-direita-preta.svg");
+.info-endereco .btn-mapa:hover svg {
   transform: translateX(4px);
 }
 
@@ -191,19 +192,32 @@
   padding-top: 20px;
 }
 
-.info-redes-sociais img {
-  height: 25px;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-  cursor: pointer;
+.info-redes-sociais .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.info-redes-sociais img:last-child {
+.info-redes-sociais .icon svg {
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.info-redes-sociais .icon {
+  transition: transform 0.2s ease;
+}
+
+.info-redes-sociais .youtube svg {
+  width: 28px;
   height: 22px;
 }
 
-.info-redes-sociais img:hover {
+.info-redes-sociais .icon:hover svg {
   transform: scale(1.15);
-  opacity: 0.8;
+  color: var(--v1-color);
 }
 
 /* mobile pequeno */
@@ -246,15 +260,15 @@
     font-size: 18px;
   }
 
-  .info-endereco button {
-    width: 146px;
-  }
-
   .infos-contato {
     max-width: 250px;
   }
+  
+  .info-endereco .btn-mapa {
+    width: 146px;
+  }
 
-  .info-endereco button img {
+  .info-endereco .btn-mapa svg {
     width: 8px;
   }
 
@@ -266,11 +280,11 @@
     font-size: 14px;
   }
 
-  .info-redes-sociais img {
+  .info-redes-sociais .icon svg {
     height: 22px;
   }
 
-  .info-redes-sociais img:last-child {
+  .info-redes-sociais .youtube svg {
     height: 19px;
   }
 }
@@ -304,7 +318,7 @@
     width: 300px;
   }
 
-  .info-endereco button {
+  .info-endereco .btn-mapa {
     width: 166px;
   }
 
@@ -320,11 +334,11 @@
     font-size: 14px;
   }
 
-  .info-redes-sociais img {
+  .info-redes-sociais .icon svg {
     height: 22px;
   }
 
-  .info-redes-sociais img:last-child {
+  .info-redes-sociais .youtube svg {
     height: 19px;
   }
 }
@@ -362,11 +376,11 @@
     max-width: 350px;
   }
 
-  .info-redes-sociais img {
+  .info-redes-sociais .icon svg {
     height: 24px;
   }
 
-  .info-redes-sociais img:last-child {
+  .info-redes-sociais .youtube svg {
     height: 21px;
   }
 }
